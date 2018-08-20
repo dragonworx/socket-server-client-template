@@ -1,0 +1,139 @@
+/* .container {
+  position: absolute;
+  left: 0;
+  top: 0;
+} */
+
+* {
+  box-sizing: content-box;
+}
+
+body {
+  font-family: monospace;
+}
+
+.directory {
+  border-bottom: 1px solid #8e8e8e91;
+  border-top: 1px solid #ffffff29;
+  /* background-color: rgba(0,0,0,0.03); */
+}
+
+.title {
+  cursor: pointer;
+  user-select: none;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.title img, .file img {
+  margin-right: 7px;
+}
+
+.subDirs {
+  padding-left: 5px;
+}
+
+.file {
+  color: blue;
+  padding-left: 21px;
+  font-weight: bold;
+}
+
+.deps {
+  margin-left: 24px;
+  font-size: 86%;
+  position: relative;
+}
+
+.deps-set {
+  display: block;
+  white-space: nowrap;
+  margin-right: 10px;
+  line-height: 1.7;
+  font-weight: normal;
+}
+
+.package {
+  background-color: white;
+  margin-left: 10px;
+  padding: 1px 3px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  color: #485fa5;
+}
+
+.package b {
+  font-weight: normal;
+}
+
+.package:first-child {
+  margin-left: 0;
+}
+
+.package-usedname {
+  background-color: #d6d6d6;
+  padding: 0 3px;
+  border: 1px solid #fff;
+  border-left: none;
+  font-weight: normal;
+  color: #0060fb;
+}
+
+.package-usedname:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.outs .package {
+  font-weight: normal;
+  background-color: #d6d6d6;
+  color: #0060fb;
+}
+
+.outs .package-usedname {
+  font-weight: normal;
+  color: white;
+  background-color: #7cb8d6;
+  border: 1px solid #c2dfea;
+}
+
+.ins, .outs {
+  color: white;
+  padding-left: 50px;
+  position: relative;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.deps_gutter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 100%;
+  background-color: red;
+}
+
+.ins_label, .outs_label {
+  color: white;
+  min-width: 32px;
+  display: inline-block;
+}
+
+.dep_label {
+  color: white;
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  margin-top: -10px;
+}
+
+.ins .dep_label {
+  left: 12px;
+}
+
+.highlight {
+  background-color: yellow;
+}

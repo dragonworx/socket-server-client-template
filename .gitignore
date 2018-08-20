@@ -1,0 +1,7 @@
+node_modules
+*.log
+*/*.log
+.vscode
+exclude.txt
+exclude.pause.txt
+data.json
